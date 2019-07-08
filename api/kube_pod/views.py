@@ -1,6 +1,6 @@
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from free_now_api.settings import INITIATE_APP
+from kube_service.settings import INITIATE_APP
 from utils.basic_utilities import Utilities
 
 

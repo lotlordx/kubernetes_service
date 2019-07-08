@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'free_now_api.urls'
+ROOT_URLCONF = 'kube_service.urls'
 
 REST_FRAMEWORK = {
 
@@ -83,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'free_now_api.wsgi.application'
+WSGI_APPLICATION = 'kube_service.wsgi.application'
 
 
 # Database
