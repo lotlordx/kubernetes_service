@@ -73,7 +73,7 @@ else
     . venv/bin/activate
 
     echo "Installing package Dependencies into your virtual enviroment..."
-    pip3 install -r requirements.txt
+    pip install -r requirements.txt
 
     echo "Processing Django Migrations..."
     python manage.py makemigrations
@@ -89,9 +89,9 @@ else
     echo "Installing virtualEnv for ${osType} .."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-    brew install python3
-    sudo easy_install pip3
-    sudo pip3 install virtualenv
+    brew install python
+    sudo easy_install pip
+    sudo pip install virtualenv
 
     cd ${BASEPATH}
     echo "Activating your virtual enviroment.."
