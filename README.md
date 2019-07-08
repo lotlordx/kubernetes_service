@@ -14,6 +14,20 @@ given.
 
 Thus i decided to write a bash script to automate your build..  
 
+## Unit Testing
+
+Test driven development was implemented in the development of this service . To intiate the test kindly run the
+following command in the folder path on your terminal
+```bash
+python manage.py test
+```    
+sample response
+
+```bash
+
+```
+
+
 
 #### Flow One (Building and running the Service (Automated))
 ######Steps
