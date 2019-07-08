@@ -13,12 +13,11 @@ class DefaultNameSpacePods(viewsets.GenericViewSet):
     view_stat = status.HTTP_200_OK
 
     def list(self, *args, application_group=None):
-        """This Endpoint Gets all pods in the Default name space
-
-        :param str application_group: Defines the application group to filter query by.
-        :return: DefaultNameSpacePods
-                 If the method is called asynchronously,
-                 returns the request thread.
+        """This Endpoint Gets all pods in the Default name space.
+            It accepts a string flag application_group, which defines
+            the application group to filter query by. It returns
+            DefaultNameSpacePods If the method is called asynchronously,
+            returns the request thread
         """
 
         pod_data = []
