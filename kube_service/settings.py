@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from kubernetes import config, client
+config.load_kube_config()
+
+INITIATE_APP = client.AppsV1Api()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,12 +24,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'hk5-f6(^j1wpm3@^xarol=k=7evq6i!z&!0iaay6%fxm!8bgb$'
+SECRET_KEY = 'bbod1yo3a2$(mzzp0=$u9-%z9k+&o_&bv*mll#yra8%uk-cm&b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -37,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'api.kube_pod',
 ]
 
 MIDDLEWARE = [
@@ -49,7 +55,17 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'kube_service.urls'
+ROOT_URLCONF = 'free_now_api.urls'
+
+REST_FRAMEWORK = {
+
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json',
+    'TEST_REQUEST_RENDERER_CLASSES': (
+        'rest_framework.renderers.MultiPartRenderer',
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.TemplateHTMLRenderer'
+    )
+}
 
 TEMPLATES = [
     {
@@ -67,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'kube_service.wsgi.application'
+WSGI_APPLICATION = 'free_now_api.wsgi.application'
 
 
 # Database
