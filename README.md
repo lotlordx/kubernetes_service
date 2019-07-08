@@ -6,7 +6,7 @@ This service/application was written in python 3 with the Django Rest Framework.
 ## How to Build and Run the application
 
 This service assumes that you have Python 3 >  duely installed on your system preferably on a Linux or mac Os, Windows is also greatly acceptable too,
-provided you have the Python [installer](https://www.python.org/ftp/python/3.5.1/python-3.5.1-amd64.exe) installed, making sure you check the Add Python 3.5 to PATH checkbox. In cmd.exe run.
+provided you have the Python [installer](https://www.python.org/ftp/python/3.5.1/python-3.5.1-amd64.exe) installed, making sure you check the Add Python 3.5 to ENVIROMENT PATH checkbox. In cmd.exe run.
 
 Building and Running the application is seamless :) trust me..
 The service was ought to be a containerized application but I didn't want to have the image online  due to the instructions
@@ -41,9 +41,10 @@ Not my favorite...
 ######Steps
 #####Mac Build
 1. open up the project path in your terminal 
-2. run the following commands on yout terminal
+2. run the following commands on your terminal
     ```
-    easy_install virtualenv
+    sudo easy_install pip
+    sudo pip install virtualenv
     virtualenv --no-site-packages --python=python3 venv
     source venv/bin/activate
     ```
@@ -86,9 +87,10 @@ Not my favorite...
 2. Download Python [installer](https://www.python.org/ftp/python/3.5.1/python-3.5.1-amd64.exe) and install making sure you check the Add Python 3.5 to PATH checkbox. In cmd.exe run:
 3. run the following commands on yout terminal
     ```
+    python -m pip install --upgrade pip
     pip install virtualenv
-    virtualenv --no-site-packages --python=python3 venv
-    venv\Scripts\activate
+    virtualenv --no-site-packages venv
+    ./venv/Scripts/activate.bat
     ```
 4. still on the project path , run the following commands to prepare migrations
     
