@@ -53,7 +53,7 @@ if [ -d "$ENVIROMENTPATH" ]; then
 
 
 else
-    echo "This definitely looks like you first build, but not to worry.... Sip Some Cofee Trust Me This Won't take Long .... :)"
+    echo "This definitely looks like your first build, but not to worry.... Sip Some Cofee Trust Me This Won't take Long .... :)"
     sleep 4
 #    if enviroment path does not exist
     echo "Detecting Os type..."
@@ -64,6 +64,10 @@ else
     Linux*)
 
     # _______________________________Linux Installation_____________________________
+
+    echo "Running Updates to Install Python 3>"
+    sudo apt-get update
+    sudo apt-get install python3.6
     echo "Installing virtualEnv for ${osType} .."
     sudo apt-get -y install python-virtualenv
 
