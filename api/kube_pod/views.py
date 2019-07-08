@@ -7,8 +7,6 @@ from utils.basic_utilities import Utilities
 class DefaultNameSpacePods(viewsets.GenericViewSet):
     """Endpoint Name: Default Name Space Pods
 
-        This Class gets all running pods in the default namespace,
-        and if a url argument is passed along, returns the filter items
     """
     permission_classes = []
     name_space = 'default'
