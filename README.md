@@ -3,17 +3,6 @@ by Lotanna Amaechi
 
 Language preference used in the developement of this service was Python3 , built on top of Django Rest Framework.
 
-## How to Build and Run the application
-
-This service assumes that you have Python 3 >  duely installed on your system preferably on a Linux or mac Os, Windows is also greatly acceptable too,
-provided you have the Python [installer](https://www.python.org/ftp/python/3.5.1/python-3.5.1-amd64.exe) installed, making sure you check the Add Python 3.5 to ENVIROMENT PATH checkbox. In cmd.exe run.
-
-Building and Running the application is seamless :) trust me..
-The service was ought to be a containerized application but I didn't want to have the image online  due to the instructions
-given.
-
-Thus i decided to write a bash script to automate your build..  
-
 ## Unit Testing
 
 Test driven development (TDD) was implemented in the development of this service . To intiate the test kindly run the
@@ -34,6 +23,17 @@ OK
 Destroying test database for alias 'default'...
 
 ```
+
+## How to Build and Run the application
+
+This service assumes that you have Python 3 >  duely installed on your system preferably on a Linux or mac Os, Windows is also greatly acceptable too,
+provided you have the Python [installer](https://www.python.org/ftp/python/3.5.1/python-3.5.1-amd64.exe) installed, making sure you check the Add Python 3.5 to ENVIROMENT PATH checkbox. In cmd.exe run.
+
+Building and Running the application is seamless :) trust me..
+The service was ought to be a containerized application but I didn't want to have the image online  due to the instructions
+given.
+
+Thus i decided to write a bash script to automate your build..  
 
 
 
