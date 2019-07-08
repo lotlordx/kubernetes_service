@@ -16,7 +16,7 @@ class DefaultNameSpacePods(viewsets.GenericViewSet):
         """This Endpoint Gets all pods in the Default name space.
             It accepts a string flag application_group, which defines
             the application group to filter query by. It returns
-            DefaultNameSpacePods If the method is called asynchronously,
+            DefaultNameSpacePods list object If the method is called asynchronously,
             returns the request thread
         """
 
@@ -30,11 +30,8 @@ class DefaultNameSpacePods(viewsets.GenericViewSet):
             pod_object = {}
         if application_group is not None:
             pod_data = [k for k in pod_data if application_group in k.values()]
-
         if not pod_data:
-            print(pod_data)
             self.view_stat = status.HTTP_204_NO_CONTENT
-
         return Response(pod_data, status=self.view_stat)
 
 
