@@ -21,7 +21,6 @@ from rest_framework.documentation import include_docs_urls
 
 urlpatterns = [
     path('doc/', include_docs_urls(title='Free Now Kubernetes API by Lotanna Amaechi', public=False)),
-    path('admin/', admin.site.urls),
     path('', RedirectView.as_view(url='/doc', permanent=False), name='index'),
     path('', include('api.kube_pod.urls'), name='service'),
 
