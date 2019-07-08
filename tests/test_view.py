@@ -2,7 +2,7 @@ from rest_framework.test import APITestCase, RequestsClient
 
 
 class KubectlTestCase(APITestCase):
-    """This Test Case Check for Proper Connectivity of the Endpoint SERVICE"""
+    """This Test Case Checks for Proper Connectivity of the Endpoint SERVICE"""
 
     @staticmethod
     def test_case_1():

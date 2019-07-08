@@ -16,14 +16,22 @@ Thus i decided to write a bash script to automate your build..
 
 ## Unit Testing
 
-Test driven development was implemented in the development of this service . To intiate the test kindly run the
-following command in the folder path on your terminal
+Test driven development (TDD) was implemented in the development of this service . To intiate the test kindly run the
+following command in the folder path on your terminal with your venv activated.
 ```bash
 python manage.py test
 ```    
 sample response
 
 ```bash
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.122s
+
+OK
+Destroying test database for alias 'default'...
 
 ```
 
