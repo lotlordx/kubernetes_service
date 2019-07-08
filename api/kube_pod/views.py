@@ -30,6 +30,7 @@ class DefaultNameSpacePods(viewsets.GenericViewSet):
                 pod_object = {}
             if application_group is not None:
                 pod_data = [k for k in pod_data if application_group in k.values()]
+
             # update status code based on object data
             self.view_stat = status.HTTP_200_OK if pod_data else status.HTTP_204_NO_CONTENT
             return Response(pod_data, status=self.view_stat)
