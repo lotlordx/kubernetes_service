@@ -65,9 +65,6 @@ else
 
     # _______________________________Linux Installation_____________________________
 
-    echo "Running Updates to Install Python 3>"
-    sudo apt-get update
-    sudo apt-get install python3.6
     echo "Installing virtualEnv for ${osType} .."
     sudo apt-get -y install python-virtualenv
 
@@ -77,7 +74,7 @@ else
     . venv/bin/activate
 
     echo "Installing package Dependencies into your virtual enviroment..."
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
 
     echo "Processing Django Migrations..."
     python manage.py makemigrations
