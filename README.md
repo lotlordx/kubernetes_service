@@ -1,7 +1,7 @@
-# Python Solution to Platform Engineer Test Challenge
+# Platform Engineer Test Challenge Solution
 by Lotanna Amaechi
 
-This service/application was written in python 3 with the Django Rest Framework.
+Language preference used in the developement of this service was Python3 , built on top of Django Rest Framework.
 
 ## How to Build and Run the application
 
