@@ -126,7 +126,7 @@ Not my favorite...
     ```
     
 
-### 1. Question One Sample Response Solution
+### 1. Sample One Response 
 
 Add an endpoint to the service that exposes all pods running in the cluster in namespace `default`:
 
@@ -163,7 +163,7 @@ GET `/services`
 ]
 ```
 
-### 2. Question two Sample Response Solution
+### 2. Sample two Response 
 
 Create an endpoint in your service that exposes the pods in the cluster in namespace `default` that are part of the same `applicationGroup`:
 
