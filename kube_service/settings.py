@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
 import os
 from kubernetes import config, client
 config.load_kube_config()
@@ -27,8 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'bbod1yo3a2$(mzzp0=$u9-%z9k+&o_&bv*mll#yra8%uk-cm&b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost']
 
 

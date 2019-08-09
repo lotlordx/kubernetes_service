@@ -1,7 +1,5 @@
-# Platform Engineer Test Challenge Solution
-by Lotanna Amaechi
-
-Language preference used in the developement of this service was Python3 , built on top of Django Rest Framework.
+# Kubernetes Deployment Count Endpoint
+This is a simple Python Application that gets running pods on your kube instance
 
 ## Unit Testing
 
@@ -184,3 +182,4 @@ GET `/services/{applicationGroup}`
     }
 ]
 ```
+

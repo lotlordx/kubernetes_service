@@ -74,7 +74,7 @@ else
     . venv/bin/activate
 
     echo "Installing package Dependencies into your virtual enviroment..."
-    pip3 install -r requirements.txt
+    pip install -r requirements.txt
 
     echo "Processing Django Migrations..."
     python manage.py makemigrations
